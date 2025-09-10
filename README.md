@@ -23,16 +23,16 @@ Homeall did most of the hard work--I just reduced the plugin selection.
 
 This docker image enhances the work from [@lucaslorentz](https://github.com/lucaslorentz/caddy-docker-proxy) by bundling several useful plugins:
 * **[caddy-docker-proxy](https://github.com/lucaslorentz/caddy-docker-proxy)** – auto-configure Caddy from container labels.
-* **[caddy-dynamicdns](https://github.com/mholt/caddy-dynamicdns)** – updates DNS records when your IP changes.
+* **[caddy-storage-redis](https://github.com/pberkel/caddy-storage-redis)** – store certificates in Redis for clustered setups.
+* **[Cloudflare DNS](https://github.com/caddy-dns/cloudflare)** – handle ACME DNS challenges through Cloudflare.
+
+~~* **[caddy-dynamicdns](https://github.com/mholt/caddy-dynamicdns)** – updates DNS records when your IP changes.~~
+
 ~~* **[sablier](https://github.com/sablierapp/sablier)** – start workloads on demand and stop them when idle.~~
 
 ~~* **[CrowdSec bouncer](https://github.com/hslatman/caddy-crowdsec-bouncer)** – block malicious traffic via CrowdSec (HTTP/AppSec/Layer4).~~
 
 ~~* **[caddy-admin-ui](https://github.com/gsmlg-dev/caddy-admin-ui)** – experimental web UI for administration.~~
-
-~~* **[caddy-storage-redis](https://github.com/pberkel/caddy-storage-redis)** – store certificates in Redis for clustered setups.~~
-
-~~* **[Cloudflare DNS](https://github.com/caddy-dns/cloudflare)** – handle ACME DNS challenges through Cloudflare.~~
 
 ~~* **[transform-encoder](https://github.com/caddyserver/transform-encoder)** – additional compression encoders.~~
 

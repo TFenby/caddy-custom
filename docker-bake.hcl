@@ -34,7 +34,7 @@ target "build" {
 
   # ---------- Image Labels ----------
   labels = {
-    "maintainer"           = "TFenby"
+    "maintainer"           = "tfenby"
   }
 
   # ---------- Image Annotations (OCI manifest-level) ----------
