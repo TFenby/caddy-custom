@@ -21,7 +21,7 @@ jobs:
         id: image
         run: |
           # Convert repository to lowercase
-          IMAGE_REF="ghcr.io/${GITHUB_REPOSITORY,,}:latest"
+          IMAGE_REF="ghcr.io/${GITHUB_REPOSITORY,,}"
           echo "IMAGE_REF=${IMAGE_REF}" >> $GITHUB_ENV
           echo "Using image: ${IMAGE_REF}"
       - name: Install Cosign
