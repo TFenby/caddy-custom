@@ -1,8 +1,12 @@
 name: Trivy
 
 on:
-  push:
-    branches: [ main ]
+#  push:
+#    branches: [ main ]
+  workflow_run:
+    workflows: ["CI"]  # Must match the 'name' field in your CI workflow
+    types:
+      - completed
   schedule:
     - cron: '5 9 * * 2'
   workflow_dispatch:
