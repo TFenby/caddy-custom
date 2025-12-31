@@ -7,7 +7,9 @@ FROM caddy:${CADDY_VERSION}-builder AS builder
 RUN xcaddy build \
     --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
     --with github.com/pberkel/caddy-storage-redis \
-    --with github.com/caddy-dns/cloudflare
+    --with github.com/caddy-dns/cloudflare \
+    --with github.com/hslatman/caddy-crowdsec-bouncer/http \
+    --with github.com/hslatman/caddy-crowdsec-bouncer/appsec
 
 # Certs stage
 FROM alpine:${ALPINE_VERSION} AS certs
