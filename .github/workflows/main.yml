@@ -112,7 +112,7 @@ jobs:
           output-file: 'sbom.spdx.json'
 
       - name: Attest SBOM GHCR
-        uses: actions/attest-sbom@v3
+        uses: actions/attest-sbom@v4
         with:
           subject-name: ${{ env.IMAGE_REF }}
           subject-digest: ${{ steps.extract_digest.outputs.digest }}
