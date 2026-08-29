@@ -22,7 +22,7 @@ ENV XDG_CONFIG_HOME=/config \
 EXPOSE 80 443 2019 443/udp
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
-COPY --from=builder /bin/busybox /bin/busybox
+COPY --from=certs /bin/busybox /bin/busybox
 COPY --from=certs /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=certs /usr/share/zoneinfo /usr/share/zoneinfo
 
