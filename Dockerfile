@@ -1,4 +1,4 @@
-ARG CADDY_VERSION=2.11.4
+ARG CADDY_VERSION=2.11.7
 
 # ---- Builder Stage ----
 FROM caddy:${CADDY_VERSION}-builder AS builder
